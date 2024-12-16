@@ -11,6 +11,6 @@ Portfolio website built using HTML5, CSS3, JavaScript.
 
 # Here is the Main Page 🚀:
 
-<img src="" width="100%">
+<img src="" width="100%" alt="home page">
 <img src="" width="100%">
 

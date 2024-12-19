@@ -1,0 +1,370 @@
+.homePage{
+    background-image: url('images/dark_background.jpg');
+    background-size: cover;
+    color: white;
+    padding-top: 3%;
+    li{
+        margin-left: 8%;
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+
+    #homerow{
+        padding-top: 8%;
+        padding-bottom: 15%;
+        text-align: left;
+        column-gap: 10%;
+    }
+
+    #myBitmoji{
+        border-radius: 50%;
+    }
+    #greet{
+        margin-top: 3%;
+        #name{
+            color: blueviolet;
+        
+        }
+        #hi{
+            font-size: 55px;
+        }
+        #hi:hover{
+            transform: scale(110%, 110%);
+            transition-duration: 1s;
+        }
+        h4:hover{
+            transform: scale(105%,150%);
+            transition-duration: 1s;
+        }
+        #role{
+            color:yellow;
+            text-shadow: black 2px 3px 2px;
+        }
+        #btn-knowmore{
+            margin-bottom: 3%;
+        }
+        #social-logo1,#social-logo2,#social-logo3,#social-logo4,#social-logo5{
+            background-color: black;
+            border-radius: 50%;
+            padding: 1% 2%;
+            color: yellow;
+            font-size: 25px;
+            transition: transform .3s;
+            display: inline-block;
+        }
+        #social-logo1:hover{
+            background-color: tomato;
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+            
+        }
+        #social-logo2:hover{
+            background-color: rgb(0, 140, 255);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo3:hover{
+            background-color: rgb(31, 31, 31);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo4:hover{
+            background-color: rgb(0, 208, 255);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo5:hover{
+            background-color: rgb(249, 92, 249);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+
+    }
+}
+
+.aboutPage{
+    background-color: beige;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    #title_about{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 4%;
+        span{
+            color: blueviolet;
+        }
+    }
+    #aboutrow{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+    #myImage{
+        border-radius: 5px;
+        box-shadow: grey 2px 2px 4px 3px;
+        height: 400px;
+        width: 320px;
+    }
+    #myImage:hover{
+        box-shadow: 4px 4px 8px grey;
+    }
+    #name_about{
+        font-size: xx-large;
+        #fname{
+            color: blueviolet;
+            text-shadow: black 1px 1px 2px;
+        }
+        #lname{
+            color: yellow;
+            text-shadow: black 1px 1px 2px;
+        }
+    }
+    .text:hover{
+        transform: translate(-20px,0px);
+        transition-duration: 1s;
+    }
+
+}
+
+.skillsPage{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    background-color: yellow;
+    #title_skills{
+        color: black;
+        text-shadow: black 1px 1px 2px;
+        font-size: 35px;
+        span{
+            color: blueviolet;
+        }
+        text-align: center;
+        
+    }
+    .content{
+        background-color: orange;
+        width: 60%;
+        padding: 3% 3%;
+        margin-top: 4%;
+        text-align: center;
+        border-radius: 10px;
+        display: grid;
+        .col{
+            color: white;
+            border-radius: 10px;
+            /* margin: 2% 0% 0% 3%; */
+            margin: 3%;
+            border: 0.8px solid black;
+            padding: 1%;
+            background-color: rgb(30, 2, 56);
+        }
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 10px;
+        }
+        .col:hover{
+            transform: scale(110%,110%);
+            background-color: yellow;
+            transition-duration: 1s;
+        }
+        .col{
+            p{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.educationPage{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    background-color: rgb(207, 250, 236);
+    #title_edu{
+        text-align: center;
+        color: black;
+        /* text-shadow: black 1px 1px 2px; */
+        font-size: 35px;
+        margin-bottom: 1%;
+        span{
+            color: #8a2be2;
+        }
+        
+    }
+    #edu_quote{
+        text-align: center;
+    }
+    .content{
+        margin-left: 10%;
+        margin-top: 5%;
+        
+        img{
+            width: 300px;
+            height: 150px;
+        }
+        .card{
+            box-shadow: 2px 2px 4px grey;
+            margin-top: 5%;
+        }
+        .card:hover{
+            box-shadow: 3px 3px 8px rgb(75, 74, 74);
+        }
+        
+    }
+
+    .card-horizontal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px grey;
+        width: fit-content;
+        padding-right: 2%;
+      }
+      
+      .img-square-wrapper {
+        width: 250px; /* Adjust as needed */
+        height: 150px;
+        overflow: hidden;
+      }
+}
+
+.projectPage{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    background-color: rgb(1, 1, 69);
+    #title_skills{
+        text-align: center;
+        text-shadow: black 1px 1px 2px;
+        font-size: 35px;
+        margin-bottom: 3%;
+        color: white;
+        span{
+            color: blueviolet;
+        }
+        
+    }
+    .row{
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+    .card{
+        width: 400px;
+        img{
+            height: 200px;
+        }
+        box-shadow: 2px 2px 4px 2px black;
+    }
+    .card:hover{
+        transform: scale(105%);
+        transition-duration: 0.5s;
+        img{
+            opacity: 0.5;
+        }
+    }
+    .btn{
+        background-color: rgb(82, 8, 151);
+    }
+}
+
+
+.contactPage{
+    padding-top: 5%;
+    padding-bottom: 4%;
+    background-color: rgb(207, 250, 236);
+    #title_contact{
+        text-align: center;
+        color: black;
+        text-shadow: black 1px 1px 2px;
+        font-size: 35px;
+        margin-bottom: 5%;
+        span{
+            color: #8a2be2;
+        }
+        
+    }
+    .content{
+        background-color: white;
+        box-shadow: 2px 2px 4px 2px grey;
+        border-radius: 10px;
+        width: 75%;
+        padding: 4%;
+        height: 430px;
+        margin-left: 15%;
+        img{
+            height: 300px;
+        }
+
+        #floatingInput,#floatingTextarea2{
+            background-color: rgb(207, 250, 236);
+            
+        }
+        #floatingTextarea2{
+            margin-bottom: 5px;
+        }
+    }
+
+}
+
+.footer{
+    background-color: rgb(1, 1, 33);
+    color: white;
+    padding-top: 2%;
+
+    .links{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
+    }
+
+    .info{
+        #social-logo1,#social-logo2,#social-logo3,#social-logo4,#social-logo5{
+            background-color: black;
+            border-radius: 50%;
+            padding: 1% 2%;
+            color: yellow;
+            font-size: 15px;
+            transition: transform .3s ease-out;
+            display: inline-block;
+        }
+        #social-logo1:hover{
+            background-color: tomato;
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+            
+        }
+        #social-logo2:hover{
+            background-color: rgb(0, 140, 255);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo3:hover{
+            background-color: rgb(31, 31, 31);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo4:hover{
+            background-color: rgb(0, 208, 255);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+        #social-logo5:hover{
+            background-color: rgb(249, 92, 249);
+            transform: translate(0, -5px);
+            box-shadow: 0px 10px 10px 0px black;
+        }
+    }
+    #credits{
+        margin-top: 1%;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+}

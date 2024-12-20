@@ -14,11 +14,17 @@
         padding-top: 8%;
         padding-bottom: 15%;
         text-align: left;
-        column-gap: 10%;
+        column-gap: 13%;
     }
 
     #myBitmoji{
         border-radius: 50%;
+        max-width: 340px;
+        min-width: none;
+    }
+    #myBitmoji:hover{
+        transform: rotateY(360deg);
+        transition-duration: 1s;
     }
     #greet{
         margin-top: 3%;
@@ -31,11 +37,11 @@
         }
         #hi:hover{
             transform: scale(110%, 110%);
-            transition-duration: 1s;
+            transition-duration: .7s;
         }
         h4:hover{
             transform: scale(105%,150%);
-            transition-duration: 1s;
+            transition-duration: .6s;
         }
         #role{
             color:yellow;

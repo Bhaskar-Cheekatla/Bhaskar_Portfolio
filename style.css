@@ -39,10 +39,10 @@
             transform: scale(110%, 110%);
             transition-duration: .7s;
         }
-        h4:hover{
+        /* h4:hover{
             transform: scale(105%,150%);
             transition-duration: .6s;
-        }
+        } */
         #role{
             color:yellow;
             text-shadow: black 2px 3px 2px;

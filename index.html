@@ -405,28 +405,6 @@
 
 
     <script src="https:/cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-                const image = document.querySelector('.bitmoji');
-                const imageContainer = image.parentElement;
-
-                image.addEventListener('mousemove', (event) => {
-                  const rect = image.getBoundingClientRect();
-                  const mouseX = event.clientX - rect.left;
-                  const mouseY = event.clientY - rect.top;
-
-                  const centerX = rect.width / 2;
-                  const centerY = rect.height / 2;
-
-                  const distortionX = -(mouseX - centerX) * 0.02; // Adjust distortion factor
-                  const distortionY = -(mouseY - centerY) * 0.02; // Adjust distortion factor
-
-                  image.style.transform = `translate(${distortionX}px, ${distortionY}px)`; 
-                  
-                });
-                image.addEventListener('mouseleave', () => {
-                  image.style.transform = 'translate(0,0)'; 
-                  });
-              </script>
 
   <script src="contact.js"></script>
 </body>

@@ -43,38 +43,41 @@ const dynamicContent = document.getElementById("role");
 //=======================================================================================================
 
 
+
+// For Image hover effect in About section.
+//=======================================================================================================
+
+const image = document.querySelector('.bitmoji');
+const imageContainer = image.parentElement;
+
+image.addEventListener('mousemove', (event) => {
+  const rect = image.getBoundingClientRect();
+  const mouseX = event.clientX - rect.left;
+  const mouseY = event.clientY - rect.top;
+
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+
+  const distortionX = -(mouseX - centerX) * 0.02; // Adjust distortion factor
+  const distortionY = -(mouseY - centerY) * 0.02; // Adjust distortion factor
+
+  image.style.transform = `translate(${distortionX}px, ${distortionY}px)`; 
+  
+});
+image.addEventListener('mouseleave', () => {
+  image.style.transform = 'translate(0,0)'; 
+  });
+
+//=======================================================================================================
+
+
+// For Contact Form Submission.
+
 function contactSubmit(){
-    alert("Submitted Successfully! Thank you for contacting me :)");
-}
-
-function changeImg1(){
-   document.getElementById('pro_img1').src='images/AI.jpeg'
-}
-function deChangeImg1(){
-   document.getElementById('pro_img1').src='images/AI_Driven_homePage.png'
-}
-
-function changeImg2(){
-   document.getElementById('pro_img2').src='images/Farm_Help_DiseasePage.png'
-}
-function deChangeImg2(){
-   document.getElementById('pro_img2').src='images/Farm_Help_homePage.png'
-}
+      alert("Submitted Successfully! Thank you for contacting me :)");
+   }
 
 
-function changeImg3(){
-    document.getElementById('pro_img3').src='images/rouletteGame.jpg'
- }
- function deChangeImg3(){
-    document.getElementById('pro_img3').src='images/roulette_code.jpeg'
- }
- 
- 
- function changeImg4(){
-    document.getElementById('pro_img4').src='images/covid_report1.jpg'
- }
- function deChangeImg4(){
-    document.getElementById('pro_img4').src='images/financial_report.jpg'
- }
+
 
 

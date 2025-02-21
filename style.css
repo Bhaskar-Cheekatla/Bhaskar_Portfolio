@@ -108,8 +108,9 @@
     #myImage{
         border-radius: 5px;
         box-shadow: grey 2px 2px 4px 3px;
-        height: 400px;
-        width: 320px;
+        height: 380px;
+        width: 250px;
+        margin-left: 10%;
     }
     #myImage:hover{
         box-shadow: 4px 4px 8px grey;
